@@ -4,10 +4,10 @@
   <img src="docs/assets/armavita-quo-mcp-hero-1080.jpg" alt="ArmaVita Quo MCP hero image" width="100%" />
 </p>
 
-`armavita-quo-mcp` is a local-first MCP server for Quo API workflows (messaging, calls, contacts, users, phone numbers, and webhooks).
+<p align="center"><strong>Brought to you by <a href="https://armavita.com">ArmaVita.com</a></strong></p>
+<p align="center">Need a custom implementation? <a href="https://armavita.com">Contact us</a>.</p>
 
-Brought to you by [ArmaVita.com](https://armavita.com).
-Need a custom implementation? [Contact us](https://armavita.com).
+`armavita-quo-mcp` is a local-first MCP server for Quo API workflows (messaging, calls, contacts, users, phone numbers, and webhooks).
 
 - MCP transport: local `stdio`
 - Runtime: Node.js 18+
@@ -36,7 +36,7 @@ Optional:
 
 - `QUO_HTTP_TIMEOUT_MS`: request timeout in milliseconds (default: `30000`).
 
-## MCP Client Config
+## Quick MCP Client Config
 
 Use this pattern in your MCP client config:
 
@@ -70,54 +70,24 @@ If your client launches from this folder, you can use:
 }
 ```
 
-## Tool Surface
+## Tool Coverage
 
-### Messages
+- Messages: `send_text`, `list_messages`, `get_message`
+- Conversations: `list_conversations`
+- Contacts: `create_contact`, `list_contacts`, `get_contact`, `update_contact`, `delete_contact`, `get_contact_custom_fields`
+- Calls: `list_calls`, `get_call`, `get_call_recordings`, `get_call_summary`, `get_call_transcription`, `get_voicemail`
+- Phone numbers: `list_phone_numbers`, `get_phone_number`
+- Users: `list_users`, `get_user`
+- Webhooks: `list_webhooks`
 
-- `send_text`
-- `list_messages`
-- `get_message`
+## Pagination
 
-### Conversations
-
-- `list_conversations`
-
-### Contacts
-
-- `create_contact`
-- `list_contacts`
-- `get_contact`
-- `update_contact`
-- `delete_contact`
-- `get_contact_custom_fields`
-
-### Calls
-
-- `list_calls`
-- `get_call`
-- `get_call_recordings`
-- `get_call_summary`
-- `get_call_transcription`
-- `get_voicemail`
-
-### Phone Numbers
-
-- `list_phone_numbers`
-- `get_phone_number`
-
-### Users
-
-- `list_users`
-- `get_user`
-
-### Webhooks
-
-- `list_webhooks`
+- List endpoints expose Quo pagination parameters such as `maxResults` and `pageToken`.
+- Preserve and pass forward returned page tokens to continue pagination.
 
 ## Usage Notes
 
 - Use E.164 format for phone numbers where required (for example `+18325551234`).
-- List endpoints expose Quo pagination parameters such as `maxResults` and `pageToken`.
 - `update_contact` requires at least one field to update.
 - API failures are returned from Quo status and response details, with secrets redacted in server error paths.
 
@@ -131,6 +101,12 @@ If your client launches from this folder, you can use:
 
 - [Authentication](docs/authentication.md)
 - [Tool Reference](docs/tool-reference.md)
+
+## Scope
+
+- This repository is an OSS local MCP server.
+- Transport mode is local `stdio` only.
+- Tool aliases are intentionally not exposed.
 
 ## Development
 
