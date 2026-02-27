@@ -1,8 +1,13 @@
 # armavita-quo-mcp
 
+<p align="center">
+  <img src="docs/assets/armavita-quo-mcp-hero-1080.jpg" alt="ArmaVita Quo MCP hero image" width="100%" />
+</p>
+
 `armavita-quo-mcp` is a local-first MCP server for Quo API workflows (messaging, calls, contacts, users, phone numbers, and webhooks).
 
 Brought to you by [ArmaVita.com](https://armavita.com).
+Need a custom implementation? [Contact us](https://armavita.com).
 
 - MCP transport: local `stdio`
 - Runtime: Node.js 18+
