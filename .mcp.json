@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "armavita-quo-mcp": {
+      "command": "bash",
+      "args": ["./run.sh"],
+      "env": {
+        "QUO_API_KEY": "YOUR_QUO_API_KEY"
+      }
+    }
+  }
+}
