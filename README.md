@@ -4,6 +4,10 @@
   <img src="docs/assets/armavita-quo-mcp-hero-1080.jpg" alt="ArmaVita Quo MCP hero image" width="100%" />
 </p>
 
+<a href="https://glama.ai/mcp/servers/@EfrainTorres/armavita-quo-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@EfrainTorres/armavita-quo-mcp/badge" alt="armavita-quo-mcp MCP server" />
+</a>
+
 <p align="center"><strong>Brought to you by <a href="https://armavita.com">ArmaVita.com</a></strong></p>
 <p align="center">Need a custom implementation? <a href="https://armavita.com">Contact us</a>.</p>
 
